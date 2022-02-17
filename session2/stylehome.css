@@ -1,0 +1,46 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+li {
+    float: left;
+    margin: 0px 10px 5px 150px;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+  
+li a:hover {
+    background-color: #111;
+}
+.active {
+    background-color: #04AA6D;
+}
+.eating-home {
+    width: 60%;
+    float: left;
+    padding: 25px 50px 75px ;
+    
+}
+
+p {
+    text-indent: 30px;
+    text-align: justify;
+    letter-spacing: 3px;
+}
+.elemen-home{
+    width: 30%;
+    float: right;
+    padding: 25px;
+}
