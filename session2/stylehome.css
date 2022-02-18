@@ -27,20 +27,20 @@ li a:hover {
 .active {
     background-color: #04AA6D;
 }
+#elemen-body{
+    padding: 25px;
+}
 .eating-home {
     width: 60%;
     float: left;
-    padding: 25px 50px 75px ;
-    
 }
-
-p {
+.eating-home p {
     text-indent: 30px;
     text-align: justify;
     letter-spacing: 3px;
 }
 .elemen-home{
-    width: 30%;
+    width: 39%;
     float: right;
-    padding: 25px;
+    /* padding: 25px; */
 }
