@@ -7,6 +7,7 @@
     <title>Document</title>
     <style type="text/css">
         div {
+            /* display: none; */
             padding: 10px;
             margin: 5px;
         }
@@ -20,36 +21,60 @@
         display: inline-block;
         font-size: 16px;
         margin: 4px 2px;
-        cursor: pointer;
-      }
+       
+        }
+        input{
+            display: inline;
+            background-color: black; /* Green */
+            border-radius: 10px;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
-    <div>Thẻ thứ 1</div>
-    <div>Thẻ thứ 2</div>
-    <div>Thẻ thứ 3</div>
-    <div>Thẻ thứ 4</div>
-    <div>Thẻ thứ 5</div>
-    <div>Thẻ thứ 6</div>
-    <div>Thẻ thứ 7</div>
-    <div>Thẻ thứ 8</div>
-    <div>Thẻ thứ 9</div>
-    <div>Thẻ thứ 10</div></br>
+    <div id="content">
+        <div>Thẻ thứ 1</div>
+        <div>Thẻ thứ 2</div>
+        <div>Thẻ thứ 3</div>
+        <div>Thẻ thứ 4</div>
+        <div>Thẻ thứ 5</div>
+        <div>Thẻ thứ 6</div>
+        <div>Thẻ thứ 7</div>
+        <div>Thẻ thứ 8</div>
+        <div>Thẻ thứ 9</div>
+        <div>Thẻ thứ 10</div>
+    </div>
     <button onclick="change_backgroud()">background</button>
+    
+    <input type="button" id="btn1" value="Ẩn"/>
+    <input type="button" id="btn2" value="Hiển Thị"/>
+
 <script>
     function change_backgroud()
     {
     var divs = document.getElementsByTagName("div");
     for (var i = 0; i < divs.length; i++){
-        // Vị trí chẵn => màu đỏ
         if ((i + 1) % 2 == 0){
             divs[i].style.background = "red";
         }
-        else { // Vị trí lẽ => màu xanh
+        else { 
             divs[i].style.background = "green";
         }
     }
 }
+</script>
+<script language="javascript">
+
+    document.getElementById("btn1").onclick = function () {
+        document.getElementById("content").style.display = 'none';
+    };
+
+    document.getElementById("btn2").onclick = function () {
+        document.getElementById("content").style.display = 'block';
+    };
+
 </script>
 </body>
 </html>
