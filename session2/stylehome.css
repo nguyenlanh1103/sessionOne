@@ -6,41 +6,48 @@ ul {
     overflow: hidden;
     background-color: black;
   }
-  
 li {
     float: left;
-    margin: 0px 10px 5px 150px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-right: 265px;
+    /* padding: 20px 160px; */
+    /* margin: 0px 10px 5px 150px; */
+}
+li:last-child {
+    padding-right: 10px;
 }
   
 li a {
-    display: block;
     color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
-  
-  
-li a:hover {
-    background-color: #111;
-}
-.active {
+li:hover {
     background-color: #04AA6D;
-}
+}  
+/* .active {
+    background-color: #04AA6D;
+}  */
 #elemen-body{
-    padding: 25px;
+    padding: 35px 100px;
 }
 .eating-home {
-    width: 60%;
+    width: 70%;
     float: left;
 }
 .eating-home p {
-    text-indent: 30px;
+    padding-top: 20px;
+    text-indent: 20px;
     text-align: justify;
     letter-spacing: 3px;
 }
 .elemen-home{
-    width: 39%;
+    width: 29%;
     float: right;
     /* padding: 25px; */
+}
+.elemen-home img {
+    float: left;
 }

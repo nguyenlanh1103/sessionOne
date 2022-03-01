@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/css">
+      body {
+        text-align: center;
+      }
+      button {
+        background-color: #4CAF50; /* Green */
+        border: 2px solid #008CBA;
+        color: white;
+        padding: 16px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+      .color_text {
+        color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Hiển thị tên người dùng đã nhập</h1>
+    <input type="number" id="numberOne" /><br /><br />
+    <input type="number" id="numberTwo" /><br /><br />
+    <label
+      >Kết quả:
+      <p id="p_name"></p
+    ></label>
+    <button type="button" onclick="add()">Cộng</button>
+    <button type="button" onclick="minus()">Trừ</button>
+    <button type="button" onclick="multiply()">Nhân</button>
+    <button type="button" onclick="division()">Chia</button>
+  </body>
+  <script>
+    function add() {
+      let x = document.getElementById("numberOne").value;
+      let y = document.getElementById("numberTwo").value;
+      let z = Number(x) + Number(y);
+      document.getElementById("p_name").innerHTML = z;
+    }
+
+    function minus() {
+      let x = document.getElementById("numberOne").value;
+      let y = document.getElementById("numberTwo").value;
+      let z = Number(x) - Number(y);
+      document.getElementById("p_name").innerHTML = z;
+    }
+
+    function multiply() {
+      let x = document.getElementById("numberOne").value;
+      let y = document.getElementById("numberTwo").value;
+      let z = Number(x) * Number(y);
+      document.getElementById("p_name").innerHTML = z;
+    }
+
+    function division() {
+      let x = document.getElementById("numberOne").value;
+      let y = document.getElementById("numberTwo").value;
+      let z = Number(x) / Number(y);
+      document.getElementById("p_name").innerHTML = z;
+    }
+
+
+  </script>
+</html>

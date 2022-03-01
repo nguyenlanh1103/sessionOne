@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+        text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>In Ra Các Dãy Số Nguyên Từ 1 Đến N</h2>
+    <form method="get" action="">
+        Nhập số: <input type="text" id="number" value="0"/>
+        <input type="button" value="In kết quả" onclick="print_snt()"/>
+    </form>
+    <div id="result">
+ 
+    </div>
+
+
+<script>
+    function kiem_tra_snt(n)
+    {
+        var flag = true;
+        if (n < 2) {
+            flag = false;
+        }
+        else if (n == 2) {
+            flag = true;
+        }
+        else if (n % 2 == 0) {
+            flag = false;
+        }
+        else {
+            for (var i = 3; i <= Math.sqrt(n); i += 2)
+            {
+                if (n % i == 0) {
+                    flag = false;
+                    break;
+                }
+            }
+        }
+    
+        return flag;
+    }
+    function print_snt()
+    {
+        var number = document.getElementById("number").value;
+        number = parseInt(number);
+        var html = '';
+        for (var i = 1; i <= number; i++) {
+            if (kiem_tra_snt(i)){
+                html += i + ' <br/>';
+            }
+        }
+        document.getElementById("result").innerHTML = html;
+    }
+</script>
+</body>
+</html>
