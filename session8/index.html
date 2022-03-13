@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+    />
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> 
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css"> -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/star-rating.css">
+
+    <!-- <script src="https://unpkg.com/swiper/js/swiper.js">  </script> 
+    <script src="https://unpkg.com/swiper/js/swiper.min.js">  </script>  -->
+    <link rel="stylesheet" href="./stylescisp.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div id="block-menu">
+            <div class="menu">
+                <ul>
+                    <li class="active"><a>Nền Tảng</a></li>
+                    <li><a href="#">Giới Thiệu</a></li>
+                    <li><a href="#">Dịch Vụ</a></li>
+                    <li><a href="#">Liên Hệ</a></li>
+                    <li><a href="#">Trang Chủ</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container-luid">
+        <div class="row">
+            <div class="col-md-3 homeshop">
+                <h2>NeTa shop</h2>
+                <ul class="list-group">
+                    <li class="list-group-item active">category 1</li>
+                    <li class="list-group-item">category 2</li>
+                    <li class="list-group-item">category 3</li>
+                    
+                </ul>
+            </div>
+            <div class="col-md-9 swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="img/slider_1_image.webp" ></div>
+                    <div class="swiper-slide"><img src="img/slider_2_image.webp" ></div>
+                    <div class="swiper-slide"><img src="img/slider_3_image.webp" ></div>
+                
+                </div> 
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+                <!-- Swiper JS -->
+                <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    spaceBetween: 30,
+                    centeredSlides: true,
+                    autoplay: {
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    },
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+                </script>
+            </div> <!-- #main-slider -->
+        </div>
+        <div class="row">
+
+            <div class="col-md-3 snack-po">
+                
+            </div>
+            <div class="col-md-9 set-content" >
+                <div class="row services2 clearfix">
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="books-listing-4 home-combo ">
+                        <div class="kode-thumb">
+                                <img src="img/welcome_img_1.webp">
+                        </div>
+                        <div class="kode-text">
+                                <h3>Cắt tỉa cành cây xanh</h3>
+                                <span class="">Giá trọn bộ:</span>
+                                <div class="real-price">
+                                    <span>38,700 </span><sup>đ</sup>
+                                </div>
+                                <p>Tỉa cành, cắt gọn cây xanh nhà, đường phố. Khu Vườn thêm xinh đẹp, an toàn mùa mưa bão. Dịch vụ chuyên nghiệp, an toàn.</p><br/>
+                        </div>
+                        <div class="book-price">
+                                <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                    <input type="radio" id="star5" name="rating" value="" /><label for="star5" title="5 star">5</label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star">4</label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star">3</label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star">2</label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">1</label>
+                                </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="books-listing-4 home-combo ">
+                        <div class="kode-thumb">
+                                <img src="img/slider_2_image.webp">
+                        </div>
+                        <div class="kode-text">
+                                <h3>Chăm sóc cây xanh biệt thự</h3>
+                                <span class="">Giá trọn bộ:</span>
+                                <div class="real-price">
+                                    <span>506,000 </span><sup>đ</sup>
+                                </div>
+                                <p>Dich vụ chăm sóc cây xanh, vườn hoa việt thự, đảm bảo một khu vườn nhà bạn luôn xanh sạch đẹp. Một mái ấm xanh sạch đẹp.</p><br/>
+                        </div>
+                        <div class="book-price">
+                                <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                    <input type="radio" id="star5" name="rating" value="" /><label for="star5" title="5 star">5</label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star">4</label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star">3</label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star">2</label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">1</label>
+                                </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="books-listing-4 home-combo ">
+                        <div class="kode-thumb">
+                                <img src="img/slider_3_image.webp">
+                        </div>
+                        <div class="kode-text">
+                                <h3>Thiết kế trồng cây xanh</h3>
+                                <span class="">Giá trọn bộ:</span>
+                                <div class="real-price">
+                                    <span>22,700 </span><sup>đ</sup>
+                                </div>
+                                <p>Nhận thiết kế cây xanh sân vườn, trồng cây xanh theo yêu cầu của quý khách hàng. Cây xanh được chăm sóc và bảo hành 5 năm.</p><br/>
+                        </div>
+                        <div class="book-price">
+                                <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                    <input type="radio" id="star5" name="rating" value="" /><label for="star5" title="5 star">5</label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star">4</label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star">3</label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star">2</label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">1</label>
+                                </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="books-listing-4 home-combo ">
+                        <div class="kode-thumb">
+                                <img src="img/welcome_img_4.webp">
+                        </div>
+                        <div class="kode-text">
+                                <h3>Dọn vệ sinh cắt cỏ công trình</h3>
+                                <span class="">Giá trọn bộ:</span>
+                                <div class="real-price">
+                                    <span>250,300 </span><sup>đ</sup>
+                                </div>
+                                <p>Nhận dọn vệ sinh, cắt cỏ, chăm sóc thảm cỏ sân vườn theo yêu cầu. Thảm cỏ luôn xanh sạch và có mức độ phát triển phù hợp.</p><br/>
+                        </div>
+                        <div class="book-price">
+                                <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                    <input type="radio" id="star5" name="rating" value="" /><label for="star5" title="5 star">5</label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star">4</label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star">3</label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star">2</label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">1</label>
+                                </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="books-listing-4 home-combo ">
+                        <div class="kode-thumb">
+                                <img src="img/welcome_img_5.webp">
+                        </div>
+                        <div class="kode-text">
+                                <h3>Trồng hoa ban công trong nhà</h3>
+                                <span class="">Giá trọn bộ:</span>
+                                <div class="real-price">
+                                    <span>386,800 </span><sup>đ</sup>
+                                </div>
+                                <p>Bán bình, giỏ hoa, nhận thiết kế thi công hoa ban công, hoa khuôn viên, hoa biệt thự hoa cho vườn riêng.</p><br/>
+                        </div>
+                        <div class="book-price">
+                                <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                    <input type="radio" id="star5" name="rating" value="" /><label for="star5" title="5 star">5</label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star">4</label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star">3</label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star">2</label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">1</label>
+                                </div>
+                        </div>
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-6">
+                        <div class="books-listing-4 home-combo ">
+                        <div class="kode-thumb">
+                                <img src="img/welcome_img_6.webp">
+                        </div>
+                        <div class="kode-text">
+                                <h3>Ươm mầm tương lai</h3>
+                                <span class="">Giá trọn bộ:</span>
+                                <div class="real-price">
+                                    <span>76,700 </span><sup>đ</sup>
+                                </div>
+                                <p>Dịch vụ khuôn viên cây xanh cho từng gia đình, mỗi gia đình có một khuôn viên để chăm sóc và đến nghỉ ngơi cuối tuần.</p><br/>
+                        </div>
+                        <div class="book-price">
+                                <div class="starrating risingstar d-flex justify-content-center flex-row-reverse">
+                                    <input type="radio" id="star5" name="rating" value="" /><label for="star5" title="5 star">5</label>
+                                    <input type="radio" id="star4" name="rating" value="4" /><label for="star4" title="4 star">4</label>
+                                    <input type="radio" id="star3" name="rating" value="3" /><label for="star3" title="3 star">3</label>
+                                    <input type="radio" id="star2" name="rating" value="2" /><label for="star2" title="2 star">2</label>
+                                    <input type="radio" id="star1" name="rating" value="1" /><label for="star1" title="1 star">1</label>
+                                </div>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer>
+        <div class="copyright">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <span>© Bản quyền thuộc về <strong>Teamfixbug</strong></span>
+                        <span class="hidden-xs"> | </span>
+                        <span>Cung cấp bởi 
+                            
+                            <a title="Sapo" target="_blank">LanhDz</a>
+                            
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+</body>
+</html>

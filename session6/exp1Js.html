@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+
+<script>
+    function sumArray(mang){
+    let sum = 0;
+    for (let i = 0; i < mang.length; i++){
+        sum += mang[i];
+    }
+        
+    return sum;
+    }
+
+    let mang = [1, 6, 2, 5, 10, 19, 199];
+    document.write("Tổng là : " +sumArray([1, 6, 2, 5, 10, 19, 199])+ "<br/>");
+    // console.log(sumArray(mang));
+    let array = [1, 6, 2, 5, 10, 19, 199];
+     // Lấy giá trị lớn nhất và nhỏ nhất
+    let max_val = Math.max.apply(null, array);
+    let min_val = Math.min.apply(null, array);
+    // In giá trị ra màn hình
+    document.write("Giá trị lớn nhất là : " +max_val+ "<br/>");
+    document.write("Giá trị nhỏ nhất là : " +min_val+ "<br/>");
+    
+</script>
+    
+</body>
+</html>

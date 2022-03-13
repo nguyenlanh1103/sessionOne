@@ -38,18 +38,19 @@
 </head>
 <body>
     <div id="content">
-        <div>Thẻ thứ 1</div>
-        <div>Thẻ thứ 2</div>
-        <div>Thẻ thứ 3</div>
-        <div>Thẻ thứ 4</div>
-        <div>Thẻ thứ 5</div>
-        <div>Thẻ thứ 6</div>
-        <div>Thẻ thứ 7</div>
-        <div>Thẻ thứ 8</div>
-        <div>Thẻ thứ 9</div>
-        <div>Thẻ thứ 10</div>
+        <div class="di1-content">Thẻ thứ 1</div>
+        <div class="div-content">Thẻ thứ 2</div>
+        <div class="div-content">Thẻ thứ 3</div>
+        <div class="div-content">Thẻ thứ 4</div>
+        <div class="div-content">Thẻ thứ 5</div>
+        <div class="div-content">Thẻ thứ 6</div>
+        <div class="div-content">Thẻ thứ 7</div>
+        <div class="div-content">Thẻ thứ 8</div>
+        <div class="div-content">Thẻ thứ 9</div>
+        <div class="div-content">Thẻ thứ 10</div>
     </div>
     <button onclick="change_backgroud()">background</button>
+    <button onclick="hideContent()">Hide</button>
     
     <input type="button" id="btn1" value="Ẩn"/>
     <input type="button" id="btn2" value="Hiển Thị"/>
@@ -57,22 +58,26 @@
 <script>
     function change_backgroud()
     {
-    var divs = document.getElementsByTagName("div");
-    for (var i = 0; i < divs.length; i++){
-        if ((i + 1) % 2 == 0){
-            divs[i].style.background = "red";
-        }
-        else { 
-            divs[i].style.background = "green";
+        //get element by id se tra ve gia tri cua the do
+        // get element by tag name or get element by class name se tra ve 1 mang gia tri cua the
+        var array_div = document.getElementsByClassName("div-content");
+        // var div1 = document.getElementById("div-content");
+        console.log("div: ", array_div);
+        for (var i = 0; i < array_div.length; i++){
+            if ((i + 1) % 2 == 0){
+                array_div[i].style.background = "red";
+            }
+            else { 
+                array_div[i].style.background = "green";
+            }
         }
     }
-}
-</script>
-<script language="javascript">
-
-    document.getElementById("btn1").onclick = function () {
+    function hideContent() {
         document.getElementById("content").style.display = 'none';
-    };
+    }
+    // document.getElementById("btn1").onclick = function () {
+    //     document.getElementById("content").style.display = 'none';
+    // };
 
     document.getElementById("btn2").onclick = function () {
         document.getElementById("content").style.display = 'block';
